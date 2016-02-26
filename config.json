@@ -1,0 +1,18 @@
+﻿{
+    "scriptBundles": [
+        {
+            "name": "bundle.js",
+            "files": [ "Scripts/**/*.js", "!Scripts/**/*.min.js", "!Scripts/_references.js", "!Scripts/bundle.js" ],
+            "destination": "Scripts/"
+        }
+    ],
+    "styleBundles": [
+        {
+            "name": "bundle.css",
+            "files": [ "Content/scss/*.scss", "Content/*.css", "!Content/*.min.css", "!Content/bundle.css" ],
+            "destination": "Content"
+        }
+    ],
+    "images": "Images/*.png",
+    "imagesDestination": "images"
+}
