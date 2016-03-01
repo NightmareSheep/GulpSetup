@@ -2,7 +2,7 @@
     "scriptBundles": [
         {
             "name": "bundle.js",
-            "files": [ "Scripts/**/*.js", "!Scripts/**/*.min.js", "!Scripts/_references.js", "!Scripts/bundle.js" ],
+            "files": [ "Scripts/**/*.js", "!Scripts/**/*.min.js", "!Scripts/_references.js", "!Scripts/bundle.js", "!Scripts/libs.js" ],
             "destination": "Scripts/"
         }
     ],
@@ -10,9 +10,19 @@
         {
             "name": "bundle.css",
             "files": [ "Content/scss/*.scss", "Content/*.css", "!Content/*.min.css", "!Content/bundle.css" ],
-            "destination": "Content"
+            "destination": "Content/"
         }
     ],
+    "bower": {
+        "scripts": {
+            "name": "libs.js",
+            "destination": "Scripts/"
+        },
+        "Styling": {
+            "name": "libs.css",
+            "destination" : "Content/"
+        }
+    },
     "images": "Images/*.png",
     "imagesDestination": "images"
 }
