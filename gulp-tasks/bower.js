@@ -10,12 +10,18 @@ var mainBowerFiles = require('main-bower-files');
 var config = require('../config.json');
 
 var jsFilter = filter('**/*.js', { restore: true }),
-			cssFilter = filter('**/*.css', { restore: true }),
-			scssFilter = filter('**/*.scss', { restore: true }),
-			jsDestFile = 'libs.js',
-			libsCssDistFile = 'libs-css.scss',
-			libsScssDistFile = '_libs-scss.scss';
+    scssAndCssFilter = filter(['**/*.scss', '**/*.css'], { restore: true });
 
 gulp.task('bower', function() {
-    
+    return gulp.src(mainBowerFiles())
+		.pipe(jsFilter)
+		    .pipe(concat(config.bower.scripts.name))
+		    .pipe(uglify())
+		    .pipe(gulp.dest(config.bower.scripts.destination))
+		    .pipe(jsFilter.restore)
+		.pipe(scssAndCssFilter)
+            .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
+	        .pipe(concat(config.bower.styling.name))
+            .pipe(minifyCss())
+		    .pipe(gulp.dest(config.bower.styling.destination));
 });
