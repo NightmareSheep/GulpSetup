@@ -9,7 +9,7 @@
 </ul>
 <p>Instead of putting all the tasks in one gulpfile, each task gets is own file and is inserted as a module.  You can find all the separate tasks in the gulp-tasks folder, this makes it easy to extend the setup without altering and maintaining a large gulpfile.</p>
 <p>The setup also contains a gulp-config file, this file contains configuration for which js, css, sass and images should be processed, and where the processed files should end up.</p>
-<p>For the basic setup the end result is six files:</p>
+<p>For the basic setup results in six files:</p>
 <ol>
 	<li><b>Scripts/bundle.js -</b> Bundle of all your Javascript</li>
 	<li><b>Scripts/bundle.js.map -</b> Source-map of the scripts bundle</li>
@@ -61,7 +61,7 @@
 	<li><b>Files -</b> Query of all the files that should be processed into the bundle</li>
 	<li><b>Destination -</b> Location where the processed bundle will end up</li>
 </ul>
-<p>The basic setup contains two bundles, a styling and a script bundle. They are follow standard .net mvc conventions of keeping Javascript in a Scripts folder and styling in a Content folder.</p>
+<p>The basic setup contains two bundles, a styling and a script bundle. They follow standard .net mvc conventions of keeping Javascript in a Scripts folder and styling in a Content folder.</p>
 <h3>Bower</h3>
 <p>The bower configuration works much the same as the bundling configuration, but here you cannot specify the included files yourself as they are auto included in the bundle.</p>
 <h3>Images</h3>
