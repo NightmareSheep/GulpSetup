@@ -6,7 +6,7 @@ var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var config = require('../config.json');
 
-gulp.task('sass', function () {
+gulp.task('styling', function () {
     for (var i = 0; i < config.styleBundles.length; i++) {
         var styleBundle = config.styleBundles[i];
         gulp.src(styleBundle.files)
