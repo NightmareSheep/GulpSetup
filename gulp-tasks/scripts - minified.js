@@ -3,7 +3,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 var util = require('gulp-util');
-var config = require('../config.json');
+var config = require('../gulp-config.json');
 
 gulp.task('scripts-minified', function () {
     for (var i = 0; i < config.scriptBundles.length; i++) {

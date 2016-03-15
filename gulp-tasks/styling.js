@@ -4,7 +4,7 @@ var concat = require('gulp-concat');
 var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
-var config = require('../config.json');
+var config = require('../gulp-config.json');
 
 gulp.task('styling', function () {
     for (var i = 0; i < config.styleBundles.length; i++) {

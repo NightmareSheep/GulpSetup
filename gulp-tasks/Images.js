@@ -1,7 +1,7 @@
 ﻿var gulp = require('gulp');
 var imagemin = require('gulp-imagemin');
 var imageminPngquant = require('imagemin-pngquant');
-var config = require('../config.json');
+var config = require('../gulp-config.json');
 
 gulp.task('optimize-images', function () {
     gulp.src(config.images)

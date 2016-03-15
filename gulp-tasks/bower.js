@@ -7,7 +7,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var minifyCss = require('gulp-minify-css');
 var sourcemaps = require('gulp-sourcemaps');
 var mainBowerFiles = require('main-bower-files');
-var config = require('../config.json');
+var config = require('../gulp-config.json');
 
 var jsFilter = filter('**/*.js', { restore: true }),
     scssAndCssFilter = filter(['**/*.scss', '**/*.css'], { restore: true });
