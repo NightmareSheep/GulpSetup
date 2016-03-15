@@ -1,4 +1,4 @@
-﻿var config = require('../config.json');
+﻿var config = require('../gulp-config.json');
 var watch = require('gulp-watch');
 var gulp = require('gulp');
 
