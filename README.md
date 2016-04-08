@@ -48,8 +48,8 @@
             "destination" : "Content/"
         }
     },
-    "images": "Images/*.png",
-    "imagesDestination": "images"
+    "images": "Content/images/*.png",
+    "imagesDestination": "Content/images"
 }
 </code>
 </pre>
