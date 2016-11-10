@@ -9,7 +9,7 @@
 </ul>
 <p>Instead of putting all the tasks in one gulpfile, each task gets is own file and is inserted as a module.  You can find all the separate tasks in the gulp-tasks folder, this makes it easy to extend the setup without altering and maintaining a large gulpfile.</p>
 <p>The setup also contains a gulp-config file, this file contains configuration for which js, css, sass and images should be processed, and where the processed files should end up.</p>
-<p>For the basic setup results in six files:</p>
+<p>The basic setup results in six files:</p>
 <ol>
 	<li><b>Scripts/bundle.js -</b> Bundle of all your Javascript</li>
 	<li><b>Scripts/bundle.js.map -</b> Source-map of the scripts bundle</li>
